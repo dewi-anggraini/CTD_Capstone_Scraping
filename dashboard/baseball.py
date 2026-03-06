@@ -8,6 +8,10 @@ import plotly.express as px
 
 conn = sqlite3.connect("my_database.db")
 
+# add a title and subtitle
+st.title("Baseball History Dashboard")
+st.write("This is an interactive baseball history dashboard created based on the **Major League Baseball History Site**, where users can search and view teams, events, home runs, etc. through the available features. The filter button is on the left. This application only contains 3 years of events for demo purposes.")
+
 # Sidebar controls
 st.sidebar.header("Dashboard Controls")
 allowed_years = [1901, 1902, 1903] # limit to only 3 for the demo 
